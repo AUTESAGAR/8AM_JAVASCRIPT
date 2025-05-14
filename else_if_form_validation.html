@@ -1,0 +1,20 @@
+<center>    
+    <p><input type="text" id="uname" placeholder="Enter Your Username"></p>
+    <p><input type="text" id="pwd" placeholder="Enter Your Password"></p>
+    <p><input type="submit" value="Login" onclick="valid()"></p>
+</center>
+<script>
+    function valid(){
+        let uname = document.getElementById("uname").value;
+        let pwd = document.getElementById("pwd").value;
+        if(uname==""){
+            alert("Enter Your Username");
+        }
+        else if(pwd==""){
+            alert("Enter Your Password");
+        }
+        else{
+            window.location.assign("https://www.google.com");
+        }
+    }
+</script>

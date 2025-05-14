@@ -1,0 +1,44 @@
+<style>
+    .container{
+        display: flex;
+    }
+</style>
+<body id="body">
+    <div class="container">
+        <div>
+            <input type="text" name="uname" id="uname">
+        </div>        
+        <div id="errorHandler"></div>
+        <!-- <p id="errorHandler"></p> -->
+    </div>
+<script>
+    // document.getElementById("uname").addEventListener("keyup",function(){
+    //     const uname = this.value;
+    //     console.log(uname)
+    //     if(uname=="Samir@123"){
+    //         document.getElementById("errorHandler").innerHTML="<span style='color:green'>Username Available </span>"
+    //     }
+    //     else{
+    //         document.getElementById("errorHandler").innerHTML="<span style='color:red'>Username Not Exist</span>"
+    //     }
+    // })
+    
+    document.getElementById("uname").addEventListener("focus",function(){
+        document.getElementById("uname").style="color:green;background:green";
+    })
+
+    document.getElementById("uname").addEventListener("blur",function(){
+        document.getElementById("uname").style="color:green;background:red";
+    })
+
+    document.getElementById("uname").addEventListener("change",function(){
+        const uname = this.value;
+        if(uname=="Samir@123"){
+            document.getElementById("errorHandler").style="background:url('right.png');background-size:20px;background-repeat:no-repeat;background-position:center;height:20px;width:20px;";
+        }
+        else{
+            document.getElementById("errorHandler").style="background:url('wrong.png');background-size:20px;background-repeat:no-repeat;background-position:center;height:20px;width:20px";
+        }
+    })
+</script>
+</body>

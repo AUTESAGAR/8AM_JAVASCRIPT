@@ -1,0 +1,20 @@
+<p><input type="search" id="search" placeholder="Enter Products"></p>
+<p><input type="button" onclick="search()" value="Search"></p>
+<script>
+    function search(){
+        let value = document.getElementById("search").value;
+        switch(value){
+            case "Oppo":
+            alert("This is Your Oppo Mobile Product");
+            break;
+            case "Samsung":
+            alert("This is Your Samsung Mobile Product");
+            break;
+            case "Realme":
+            alert("This is Your Realme Mobile Product");
+            break;
+            default:
+            alert("Product Not Found");
+        }
+    }
+</script>

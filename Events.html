@@ -1,0 +1,20 @@
+<script>
+    function welcome(){alert("Welcome");}
+    function enter(){document.querySelector("img").style="opacity:0.5";}
+    function out(){document.querySelector("img").style="opacity:100%";}
+    function down(){document.querySelector("body").style="color:green";}
+    function up(){document.querySelector("body").style="color:red";}
+    function scroll(){document.querySelector("body").style="background:wheat;opacity:0";}
+    function resize(){document.querySelector("body").style="background:skyblue";}
+    function keypress(){document.querySelector("body").style="background:red";}
+    function keyup(){document.querySelector("body").style="background:Yellow";}
+</script>
+<body onscroll="scroll()" onresize="resize()" onkeypress="keypress()" onkeyup="keyup()">
+    <button onclick="welcome()">welcome</button> <br><br>
+    <button ondblclick="welcome()">dbclick</button> <br><br>
+    <button oncontextmenu="welcome()">rightclick</button> <br><br>
+    <img src="./Maxico.jpg" alt="" onmouseenter="enter()" onmouseout="out()" height="250px"><br><br>
+    <button onmouseup="up()">Up</button> <br><br>
+    <button onmousedown="down()">Down</button> <br><br>
+    <p></p>    
+</body>
