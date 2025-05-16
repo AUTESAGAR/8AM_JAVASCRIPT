@@ -1,0 +1,87 @@
+<div>
+    <input type="search" name="" id="search" placeholder="search student name">
+</div>
+<div id="result"></div>
+<script>
+    document.getElementById("search").addEventListener("keyup",function(){
+        let search = this.value;
+        var names = ['Manish','Mahesh','Ganesh','Rakesh','Raju'];
+        let result = names.filter(x);
+        console.log(result);
+        function x(names){return names==search;}
+        document.getElementById("result").innerText = result;
+    })
+
+    // var no = [10,20,30,40,50,60,70];
+    // for(let i=0;i<no.length;i++){
+    //     document.write(no[i]+"<br>")
+    // }
+    
+    // var names = ['Sagar','Manish','Mahesh','Ganesh','Rakesh','Raju','Yogesh'];
+    // for(let i=0;i<names.length;i++){
+    //     document.write(names[i]+"<br>")
+    // }
+
+    // var mobile = [
+    //     ["Oppo","8GB-RAM",15000],
+    //     ["Samsung","8GB-RAM",25000],
+    //     ["Redmi","8GB-RAM",35000],
+    //     ["Real Me","8GB-RAM",45000],
+    // ];
+    // for (let i=0; i<mobile.length-1; i++){
+    //     document.write("<tr>");
+    //         for (let j=0; j<mobile.length-1; j++){
+    //             document.write(`<td>${mobile[i][j]}</td>`);
+    //         } 
+    //     document.write("</tr>");
+    // }
+
+    // let no = [10,20,30,40,50,60,70];
+    // let names = ['Sagar','Manish','Mahesh','Ganesh','Rakesh','Raju'];
+        // names.length = 0;
+        // delete names[0]; 
+
+        // names.shift()
+        // names.unshift("Ramesh")
+
+        // names.pop()
+        // names.push("Ramesh")
+
+        // names.sort();
+        // names.reverse();
+        
+        // names.reverse();
+        // let r = names.concat(no);
+        // document.write(names+"<br>")        
+        // document.write(r)
+        
+        // let r = names.slice(0,3);
+        // document.write(r)
+
+        // document.write(names)
+        // names.splice(0,1,"A","B");
+        // document.write(names)
+
+        // let no = [10,20,30,40,50,60,70];
+        // let names = ['Sagar','Manish','Mahesh','Ganesh','Rakesh','Raju'];
+        // let result = names.some(x);
+        // function x(names){
+        //     return names==="Ganesh";
+        // }
+        // document.write(result)
+
+        // let no = [10,20,30,40,50,60,70];
+        // let result = no.every(x);
+        // function x(no){
+        //     return no<=1000;
+        // }
+        // document.write(result)
+
+        // let no = [10,20,30,40,50,60,70];
+        // let result = no.filter(x);
+        // function x(no){
+        //     return no==10;
+        // }
+        // document.write(result)
+</script>
+</table>
